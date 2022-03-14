@@ -5,7 +5,7 @@
   {% for note in folder.notes %}
   <li class="list-group-item">
     {{ note.data }}
-    <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+    <button type="button" class="close" onClick="deleteNote({{ note.id }}, {{ note.folder_id }})">
       <span aria-hidden="true">&times;</span>
     </button>
   </li>
